@@ -1,26 +1,89 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Palet warna brandBlue sebagai variabel CSS */
+  --color-brandBlue-50: #e6f7ff;
+  --color-brandBlue-100: #ccf6ff;
+  --color-brandBlue-200: #80d9ff;
+  --color-brandBlue-300: #4dcbff;
+  --color-brandBlue-400: #1abeff;
+  --color-brandBlue-500: #00acce;
+  --color-brandBlue-600: #00aacc;
+  --color-brandBlue-700: #00829d;
+  --color-brandBlue-800: #006c85;
+  --color-brandBlue-900: #00576c;
+  --color-brandBlue-950: #003a4a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.flex-center {
+  @apply flex justify-center items-center;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn {
+  @apply w-16 h-16 rounded-full border-[1.5px] border-white  font-semibold  text-lg cursor-pointer transition-all duration-150 duration-300;
 }
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.rounded-box1::after {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  top: -38px;
+  right: -12px;
+  border-right: 12px solid white;
+  border-bottom: 12px solid white;
+  border-bottom-right-radius: 2rem;
+}
+
+.rounded-box1::before {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  border-left: 12px solid var(--color-brandBlue-100);
+  border-top: 12px solid var(--color-brandBlue-100);
+  border-top-left-radius: 2rem;
+}
+
+.rounded-box2::before {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  left: -38px;
+  bottom: -12px;
+  border-right: 12px solid white;
+  border-bottom: 12px solid white;
+  border-bottom-right-radius: 2rem;
+}
+
+.rounded-box3::after {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  border-left: 12px solid var(--color-brandBlue-100);
+  border-top: 12px solid var(--color-brandBlue-100);
+  border-top-left-radius: 2rem;
+}
+.rounded-box3::before {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  left: -38px;
+  bottom: -12px;
+  border-right: 12px solid white;
+  border-bottom: 12px solid white;
+  border-bottom-right-radius: 2rem;
 }
