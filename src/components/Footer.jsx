@@ -5,7 +5,7 @@ import { SocialMedia } from "./SocialMedia";
 const Footer = () => {
   return (
     <section className="flex flex-col w-full pl-[53px] bg-brandBlue-100 pt-[64px] pb-[36px]">
-      <div className="flex justify-around">
+      <div className="flex justify-between ml-8">
         <div>
           <div className="flex items-center ">
             <Image
@@ -30,9 +30,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-semibold">Navigate</h1>
-          <div className="grid grid-cols-2">
+        <div className="ml-8">
+          <h1 className="text-2xl font-semibold w-xl">Navigate</h1>
+          <div className="grid grid-cols-2 text-xl text-gray-600 gap-3 mt-2">
             <a href=""> Home </a>
             <a href=""> About </a>
             <a href=""> Visi Misi </a>
