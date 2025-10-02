@@ -46,10 +46,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute right-0 bottom-0 flex flex-col items-end">
-        <div className="relative h-16 w-44 bg-white rounded-box1 ">
+        <div className="relative h-24 w-64 bg-white rounded-box1 ">
           <div className="w-full h-fit bg-inherit rounded-box2"></div>
         </div>
-        <div className="relative h-24 w-72 bg-white rounded-box3"></div>
+        <div className="relative h-24 w-[450px] bg-white rounded-box3"></div>
       </div>
     </section>
   );

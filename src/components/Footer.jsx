@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="ml-8">
           <h1 className="text-2xl font-semibold w-xl">Navigate</h1>
-          <div className="grid grid-cols-2 text-xl text-gray-600 gap-3 mt-2">
+          <div className="grid grid-cols-2 grid-rows-3 text-xl text-gray-600 gap-3 mt-2">
             <a href=""> Home </a>
             <a href=""> About </a>
             <a href=""> Visi Misi </a>
