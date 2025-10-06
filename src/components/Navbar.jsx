@@ -23,7 +23,7 @@ const navbarLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-white fixed top-0 left-0 right-0 flex justify-between px-11 py-4">
+    <nav className="bg-white fixed top-0 left-0 right-0 flex justify-between px-11 py-4 z-50">
       <div className="flex-center">
         <Image
           alt="Logo"
