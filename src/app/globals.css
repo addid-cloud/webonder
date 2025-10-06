@@ -15,7 +15,7 @@
   --color-brandPurple-50: #efe8fd;
   --color-brandPurple-100: #efe8fd;
   --color-brandPurple-200: #efe8fd;
-  --color-brandPurple-300: #efe8fd;
+  --color-brandPurple-300: #a273f2;
   --color-brandPurple-400: #8244ee;
   --color-brandPurple-500: #efe8fd;
   --color-brandPurple-600: #4f11bb;
@@ -23,6 +23,8 @@
   --color-brandPurple-800: #efe8fd;
   --color-brandPurple-900: #efe8fd;
   --color-brandPurple-950: #efe8fd;
+  --color-brandPink-300: #f26cf9;
+  --color-brandTomato-300: #f57770;
 }
 
 .flex-center {

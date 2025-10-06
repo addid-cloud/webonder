@@ -33,7 +33,7 @@ export const Divisi = () => {
       <img
         src="./circle-full-right 1.png"
         alt=""
-        className="absolute w-1/2 h-1/2  -right-32 -bottom-10 -z-10"
+        className="absolute w-1/2 h-1/2  -right-52 -bottom-10 -z-10"
       />
     </section>
   );
