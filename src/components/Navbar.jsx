@@ -3,28 +3,16 @@ import Link from "next/link";
 import React from "react";
 
 const navbarLinks = [
-  {
-    href: "#",
-    title: "Home",
-  },
-  {
-    href: "#about",
-    title: "About",
-  },
-  {
-    href: "#event",
-    title: "Event",
-  },
-  {
-    href: "#project",
-    title: "Project",
-  },
+  { href: "#", title: "Home" },
+  { href: "#about", title: "About" },
+  { href: "#event", title: "Event" },
+  { href: "#project", title: "Project" },
 ];
 
 const Navbar = () => {
   return (
-    <nav className="bg-white fixed top-0 left-0 right-0 flex justify-between px-11 py-4 z-50">
-      <div className="flex-center">
+    <nav className="bg-white/70 fixed top-0 left-0 right-0 flex justify-between items-center px-11 py-2 z-50 backdrop-blur-md">
+      <div className="flex items-center">
         <Image
           alt="Logo"
           src={"/logo.svg"}
@@ -36,12 +24,12 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-12 font-[400]">
         {navbarLinks.map((item) => (
-          <Link href={item.href} key={item.href} className="">
+          <Link href={item.href} key={item.href}>
             {item.title}
           </Link>
         ))}
       </div>
-      <button className="bg-brandBlue-600 text-white rounded-full px-9 font-[400] cursor-pointer">
+      <button className="bg-brandBlue-600 text-white rounded-full px-9 h-8 font-[400] cursor-pointer">
         Join Us
       </button>
     </nav>
